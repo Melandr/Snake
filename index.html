@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="canvas"></div>
+
+      <div id="score">
+        <h3>Управление</h3>
+        <p><label>Длина змейки:</label> <span id="snakeLength"></span></p>
+        <p><label>Скорость змейки:</label> <span id="gameSpeed"></span></p>
+        <p>
+          Стрелки - движение<br />
+          Escape - пауза/продолжить
+        </p>
+        <button id="startGame">Начать новую игру</button>
+      </div>
+    </div>
+    <script type="module" src="./game.js"></script>
+  </body>
+</html>
