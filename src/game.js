@@ -1,7 +1,7 @@
-import Snake from "./src/snake.js";
-import Food from "./src/food.js";
-import Timer from "./src/timer.js";
-import { CanvasGrid, CanvasGame } from "./src/canvas.js";
+import Snake from "./snake.js";
+import Food from "./food.js";
+import Timer from "./timer.js";
+import { CanvasGrid, CanvasGame } from "./canvas.js";
 
 class Game {
   constructor(container) {

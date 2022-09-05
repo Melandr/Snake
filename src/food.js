@@ -1,5 +1,5 @@
-import Config from "./src/config.js";
-import { getRandomInt } from "./src/function.js";
+import Config from "./config.js";
+import { getRandomInt } from "./function.js";
 
 export default class Food {
   constructor(width, height) {

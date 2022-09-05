@@ -1,4 +1,4 @@
-import Config from "./src/config.js";
+import Config from "./config.js";
 
 class Canvas {
   constructor(container) {

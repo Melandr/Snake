@@ -1,4 +1,4 @@
-import Config from "./src/config.js";
+import Config from "./config.js";
 
 export default class Snake {
   constructor(width, height, direction) {
