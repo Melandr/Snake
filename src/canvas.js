@@ -32,7 +32,7 @@ export class CanvasGrid extends Canvas {
       this.context.lineTo(x, this.element.height);
     }
 
-    for (var y = 0.5; y < this.element.height; y += this.cellHeight) {
+    for (let y = 0.5; y < this.element.height; y += this.cellHeight) {
       if (y == 1) continue;
       this.context.moveTo(0, y);
       this.context.lineTo(this.element.width, y);

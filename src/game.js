@@ -31,12 +31,10 @@ const speedOutput = document.querySelector("#gameSpeed");
 const lengthOutput = document.querySelector("#snakeLength");
 const startButton = document.querySelector("#startGame");
 
-// document.addEventListener("DOMContentLoaded", drawGrid);
 startButton.addEventListener("click", function () {
   if ((game.status = "stopped")) {
     game.status = "game";
-    // gameTimer = setInterval(GameLoop, 1000 - (game.snake.speed + 10) * 50);
-    gameTimer.setInterval(1000 - (game.snake.speed + 10) * 50);
+    setSpeed();
   }
 });
 
@@ -48,7 +46,7 @@ document.addEventListener("keydown", (e) => {
     document.removeEventListener("keydown", game.snake.moveKeys);
   } else if (e.key == "Escape" && game.status === "paused") {
     game.status = "game";
-    gameTimer.setInterval(1000 - (game.snake.speed + 10) * 50);
+    setSpeed();
     document.addEventListener("keydown", game.snake.moveKeys);
   }
 });
@@ -58,5 +56,9 @@ function GameLoop() {
   game.draw();
   speedOutput.textContent = game.snake.speed;
   lengthOutput.textContent = game.snake.snakeLength;
+  setSpeed();
+}
+
+function setSpeed() {
   gameTimer.setInterval(1000 - (game.snake.speed + 10) * 50);
 }
