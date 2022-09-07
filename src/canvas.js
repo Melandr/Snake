@@ -18,6 +18,8 @@ export class CanvasGrid extends Canvas {
     super(container);
 
     this.element.setAttribute("id", "grid-area");
+    this.element.width = this.config.sizeGrid;
+    this.element.height = this.config.sizeGrid;
     this.cellWidth = this.config.sizeCell;
     this.cellHeight = this.config.sizeCell;
 
